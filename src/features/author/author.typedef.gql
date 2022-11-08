@@ -1,4 +1,4 @@
 type Author {
-  id: Int,
-  name: String
+  id: Int!
+  name: String!
 }

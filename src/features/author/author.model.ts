@@ -1,14 +1,14 @@
 import { find } from "lodash";
 
 export type Author = {
+  id: number;
   name: string;
-  // author: Autho
 };
 
-export default {
-  authors: [{ id: 2, name: "JRR Tolkien" }],
+const authors: Author[] = [{ id: 2, name: "JRR Tolkien" }];
 
+export default {
   async findOne(id: number): Promise<Author> {
-    return find(this.authors, { id });
+    return find(authors, { id });
   },
 };

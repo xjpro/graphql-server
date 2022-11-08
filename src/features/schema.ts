@@ -3,7 +3,7 @@ import { mergeTypeDefs, mergeResolvers } from "@graphql-tools/merge";
 import { loadFilesSync } from "@graphql-tools/load-files";
 import {makeExecutableSchema} from "@graphql-tools/schema";
 
-const typeDefsArray = loadFilesSync(path.join(__dirname, "./**"), {
+const typeDefsArray = loadFilesSync(path.join(__dirname, "./**/*.typedef.gql"), {
   extensions: ["gql"],
 });
 
