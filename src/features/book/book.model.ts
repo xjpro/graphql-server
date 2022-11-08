@@ -11,7 +11,7 @@ const books: BookEntity[] = [
 
 export default {
   async findOne(id: number): Promise<Book> {
-    return find(books, (book) => book.id === id);
+    return find(books, { id });
   },
   async findAll(): Promise<Book[]> {
     return books;
