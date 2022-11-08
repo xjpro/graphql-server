@@ -9,13 +9,10 @@ Definitions used within feature folders:
 
 - resolver - a graphql resolver, uses models to perform requested operations
 - model - service for completing operations required by resolvers, this can
-  take a variety of forms including making HTTP calls to 3rd parties, working with
-  entities in the database, etc.
-  be with entities in the database, HTTP calls to other
-- entity - db specific table/collection
+  take a variety of forms including making HTTP calls to 3rd parties, working with a
+  database, etc.
 
-Note: models and entities can (and should!) be replaced by an ORM like
-sequelize or mongoose if possible.
+Note: models can sometimes be replaced entirely by an ORM like sequelize or mongoose
 
 ## Usage
 

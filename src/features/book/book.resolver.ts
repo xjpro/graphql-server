@@ -4,7 +4,7 @@ import { Author, Book } from "../../__generated__/types";
 
 export default {
   Book: {
-    async author(book): Promise<Author> {
+    async author(book: Book): Promise<Author> {
       // todo should make use of https://github.com/graphql/dataloader
       return AuthorModel.findOne(book.authorId);
     },

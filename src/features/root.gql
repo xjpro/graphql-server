@@ -1,10 +1,10 @@
 type Query {
-    books: [Book]
-    book(id: Int!): Book
-    author(id: Int!): Author
+  books: [Book]
+  book(id: Int!): Book
+  author(id: Int!): Author
 }
 
 type Mutation {
-    updateBook(id: Int!, updateBookInput: UpdateBookInput!): Book
-    removeBook(id: Int!): Book
+  updateBook(id: Int!, updateBookInput: UpdateBookInput!): Book
+  removeBook(id: Int!): Book
 }

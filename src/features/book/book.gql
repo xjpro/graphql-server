@@ -1,6 +1,7 @@
 type Book {
   id: Int!
   title: String!
+  authorId: Int!
   author: Author
 }
 

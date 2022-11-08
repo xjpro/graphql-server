@@ -1,8 +1,7 @@
 import { assign, find, first, remove } from "lodash";
 import { Book, UpdateBookInput } from "../../__generated__/types";
-import { BookEntity } from "./book.entity";
 
-const books: BookEntity[] = [
+const books: Book[] = [
   { id: 1, title: "The Fellowship of the Ring", authorId: 44 },
   { id: 2, title: "The Two Towers", authorId: 44 },
   { id: 3, title: "The Return of the King", authorId: 44 },
