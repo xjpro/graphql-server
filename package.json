@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "generate": "graphql-codegen --config codegen.yml",
-    "build": "yarn generate && tsc",
+    "build": "tsc && copyfiles -u 1 */**/*.gql dist",
     "start": "node ./dist/index.js",
     "dev": "nodemon"
   },
@@ -25,6 +25,7 @@
     "@graphql-codegen/typescript-resolvers": "2.7.6",
     "@types/lodash": "4.14.188",
     "@types/node": "18.11.9",
+    "copyfiles": "2.4.1",
     "nodemon": "2.0.20",
     "prettier": "2.7.1",
     "ts-node": "10.9.1",
