@@ -1,0 +1,24 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xjpro/graphql-server.git",
+  "author": "Joshua Prodahl <jprodahl@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "dev": "ts-node index"
+  },
+  "dependencies": {
+    "@apollo/server": "4.1.1",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.188",
+    "@types/node": "18.11.9",
+    "prettier": "2.7.1",
+    "ts-node": "10.9.1",
+    "typescript": "4.8.4"
+  }
+}
