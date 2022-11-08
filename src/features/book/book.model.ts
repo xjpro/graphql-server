@@ -1,12 +1,6 @@
 import { assign, find, first, remove } from "lodash";
 import { Book, UpdateBookInput } from "../../__generated__/types";
-
-// Simulated db, using memory for now...
-type BookEntity = {
-  id: number;
-  title: string;
-  authorId: number;
-};
+import { BookEntity } from "./book.entity";
 
 const books: BookEntity[] = [
   { id: 1, title: "The Fellowship of the Ring", authorId: 44 },
