@@ -21,5 +21,8 @@ export default {
       const { id, updateBookInput } = params;
       return BookModel.update(id, updateBookInput);
     },
+    async removeBook(_, params): Promise<Book> {
+      return BookModel.remove(params.id);
+    },
   },
 };

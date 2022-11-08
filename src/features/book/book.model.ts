@@ -1,4 +1,4 @@
-import { assign, find } from "lodash";
+import { assign, find, first, remove } from "lodash";
 import { Book, UpdateBookInput } from "../../__generated__/types";
 
 // Simulated db, using memory for now...
@@ -22,5 +22,8 @@ export default {
   async update(id: number, updateBookInput: UpdateBookInput): Promise<Book> {
     const book = await this.findOne(id);
     return assign(book, updateBookInput);
+  },
+  async remove(id: number): Promise<Book> {
+    return first(remove(books, { id }));
   },
 };

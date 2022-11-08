@@ -6,4 +6,5 @@ type Query {
 
 type Mutation {
   updateBook(id: Int!, updateBookInput: UpdateBookInput!): Book
+  removeBook(id: Int!): Book
 }
