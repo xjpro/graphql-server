@@ -4,15 +4,15 @@ import AuthorModel from "../author/author.model";
 export default {
   Query: {
     async book(parent, params) {
-      const book = await BookModel.findOne(params.id);
-      const author = await AuthorModel.findOne(book.author as number);
-      return {
-        ...book,
-        author,
-      };
+      return BookModel.findOne(params.id);
     },
     async books() {
       return BookModel.findAll();
+    },
+  },
+  Book: {
+    async author(parent) {
+      return AuthorModel.findOne(parent.author as number);
     },
   },
 };
