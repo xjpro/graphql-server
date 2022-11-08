@@ -16,4 +16,10 @@ export default {
       return AuthorModel.findOne(book.authorId);
     },
   },
+  Mutation: {
+    async updateBook(_, params): Promise<Book> {
+      const { id, updateBookInput } = params;
+      return BookModel.update(id, updateBookInput);
+    },
+  },
 };

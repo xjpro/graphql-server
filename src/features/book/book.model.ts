@@ -1,5 +1,5 @@
-import { find } from "lodash";
-import { Book } from "../../__generated__/types";
+import { assign, find } from "lodash";
+import { Book, UpdateBookInput } from "../../__generated__/types";
 
 // Simulated db, using memory for now...
 type BookEntity = {
@@ -18,5 +18,9 @@ export default {
   },
   async findAll(): Promise<Book[]> {
     return books;
+  },
+  async update(id: number, updateBookInput: UpdateBookInput): Promise<Book> {
+    const book = await this.findOne(id);
+    return assign(book, updateBookInput);
   },
 };

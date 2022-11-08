@@ -3,3 +3,7 @@ type Query {
   book(id: Int!): Book
   author(id: Int!): Author
 }
+
+type Mutation {
+  updateBook(id: Int!, updateBookInput: UpdateBookInput!): Book
+}

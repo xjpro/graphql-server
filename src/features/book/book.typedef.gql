@@ -3,3 +3,7 @@ type Book {
   title: String!
   author: Author
 }
+
+input UpdateBookInput {
+  title: String
+}
