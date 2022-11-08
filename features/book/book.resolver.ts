@@ -1,4 +1,4 @@
-import BookModel from "./BookModel";
+import BookModel from "./book.model";
 
 export default {
   Query: {
@@ -9,7 +9,4 @@ export default {
       return BookModel.findAll();
     },
   },
-  Mutation: {
-
-  }
 };

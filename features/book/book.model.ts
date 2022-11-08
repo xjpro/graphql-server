@@ -6,7 +6,7 @@ export type Book = {
 };
 
 export default {
-  books: [{ id: 1, title: "" }],
+  books: [{ id: 1, title: "The Fellowship Of The Ring" }],
 
   async findOne(id: number) {
     return find(this.books, { id });
