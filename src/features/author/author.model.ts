@@ -1,10 +1,7 @@
 import { find } from "lodash";
+import {Author} from "../../__generated__/types";
 
-export type Author = {
-  id: number;
-  name: string;
-};
-
+// for testing purposes only, replace with db
 const authors: Author[] = [{ id: 2, name: "JRR Tolkien" }];
 
 export default {

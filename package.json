@@ -6,7 +6,8 @@
   "author": "Joshua Prodahl <jprodahl@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "generate": "graphql-codegen --config codegen.yml",
+    "build": "yarn generate && tsc",
     "start": "node ./dist/index.js",
     "dev": "nodemon"
   },
@@ -19,6 +20,9 @@
     "lodash": "4.17.21"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "2.13.11",
+    "@graphql-codegen/typescript": "2.8.1",
+    "@graphql-codegen/typescript-resolvers": "2.7.6",
     "@types/lodash": "4.14.188",
     "@types/node": "18.11.9",
     "nodemon": "2.0.20",
