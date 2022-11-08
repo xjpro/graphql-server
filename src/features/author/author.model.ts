@@ -7,7 +7,10 @@ type AuthorEntity = {
   name: string;
 };
 
-const authors: AuthorEntity[] = [{ id: 2, name: "JRR Tolkien" }];
+const authors: AuthorEntity[] = [
+  { id: 44, name: "J.R.R. Tolkien" },
+  { id: 45, name: "George Orwell" },
+];
 
 export default {
   async findOne(id: number): Promise<Author> {

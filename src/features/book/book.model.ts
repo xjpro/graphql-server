@@ -9,7 +9,10 @@ type BookEntity = {
 };
 
 const books: BookEntity[] = [
-  { id: 1, title: "The Fellowship Of The Ring", authorId: 2 },
+  { id: 1, title: "The Fellowship of the Ring", authorId: 44 },
+  { id: 2, title: "The Two Towers", authorId: 44 },
+  { id: 3, title: "The Return of the King", authorId: 44 },
+  { id: 4, title: "1984", authorId: 45 },
 ];
 
 export default {
