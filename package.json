@@ -8,7 +8,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node ./dist/index.js",
-    "dev": "ts-node index"
+    "dev": "nodemon"
   },
   "dependencies": {
     "@apollo/server": "4.1.1",
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@types/lodash": "4.14.188",
     "@types/node": "18.11.9",
+    "nodemon": "2.0.20",
     "prettier": "2.7.1",
     "ts-node": "10.9.1",
     "typescript": "4.8.4"
